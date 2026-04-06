@@ -15,5 +15,14 @@ class Book:
         return f"Book {self.title}, authors are:{self.authors}"
     def to_dict(self):
         return{
-
+            "book_id": self.id,
+            "title":self.title,
+            "sybtitle":self.subtitle,
+            "authors":self.authors,
+            "publisher":self.publisher,
+            "published_date":self.publish_date,
+            "description":self.description,
+            "pageCount":self.pageCount,
+            "genre":self.genre,
+            "language":self.language
         }
